@@ -79,6 +79,7 @@ li.MenuSelected>a {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+ 
 
 
 /* Text Color */
@@ -181,7 +182,7 @@ li.MenuSelected>a {
     padding-left: 0px !important;
 }
 
-.controls>input {
+.controls>input,.controls>textarea {
     border: 0px none #ccc;
     border-radius: 0px;
     background-color: #EEEEEE !important;
@@ -321,7 +322,30 @@ li.MenuSelected>a {
     color: #EEEEEE !important;
 }
 
+/*Upload Control*/
 
+.image-preview-input {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
 /**
  * h1,h2,h3,h4,h5,h6 { margin-top : 20px; margin-bottom: 20px;
  *
